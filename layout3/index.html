@@ -9,37 +9,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="libs/fontawesome-free/css/all.css">
+    <title>Layout  </title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed col-12" style="
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed col-12" style="
     z-index: 1;
     ">
-        <a class="navbar-brand" href="#">CAIPORA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">CAIPORA</a>
+            <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">SOBRE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicos">SEVIÇOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">CONTATO</a>
-                </li>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#sobre">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#servicos">SEVIÇOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contato">CONTATO</a>
+                    </li>
 
-            </ul>
-
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -68,24 +73,26 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-md-4 text-center">
-                <img class="" src="https://picsum.photos/200" alt="Third slide">
-                <h3>TITULO</h3>
+                <i class="fa fa-bicycle" style="font-size: 100px;"></i>
+                
+                <!-- <img class="" src="https://picsum.photos/200" alt="Third slide"> -->
+                <h2 class="my-3">TITULO</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores consequuntur cumque
                     blanditiis nihil. Nobis nesciunt labore eaque optio ipsam dolor nulla, reprehenderit, odio aut
                     numquam consectetur beatae. Rerum, accusamus?</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img class="" src="https://picsum.photos/200" alt="Third slide">
-                <h3>TITULO</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores consequuntur cumque
+                <i class="fa fa-star" style="font-size: 100px;"></i>                              
+                <h2 class="my-3">TITULO</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores consequuntur cumque
                     blanditiis nihil. Nobis nesciunt labore eaque optio ipsam dolor nulla, reprehenderit, odio aut
                     numquam consectetur beatae. Rerum, accusamus?</p>
             </div>
-
+            
             <div class="col-md-4 text-center ">
-                <img class="" src="https://picsum.photos/200" alt="Third slide">
-                <h3>TITULO</h3>
+                <i class="fa fa-subway" style="font-size: 100px;"></i>
+                <h2 class="my-3">TITULO</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores consequuntur cumque
                     blanditiis nihil. Nobis nesciunt labore eaque optio ipsam dolor nulla, reprehenderit, odio aut
                     numquam consectetur beatae. Rerum, accusamus?</p>
@@ -214,7 +221,7 @@
 
 
                 <div class="row mt-5 mx-auto">
-                    <button type="submit" class="btn btn-primary">Ver mais</button>
+                    <button type="submit" class="btn btn-secondary btn-lg active">Ver mais</button>
                 </div>
 
 
@@ -230,14 +237,14 @@
                     <form>
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nome" aria-describedby="emailHelp"
+                            <input type="text" class="form-control" id="nome" 
                                 placeholder="Nome">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="E-mail">
+                        <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</small>
                         </div>
 
                         <div class="form-group">
@@ -249,7 +256,7 @@
                             <textarea class="form-control" id="mensagem" rows="3"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
+                        <button type="submit" class="btn btn-secondary btn-lg active" style="float: right;">Enviar</button>
                     </form>
                 </div>
 
@@ -270,7 +277,7 @@
         <!-- Copyright -->
         <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
-            <a class="text-white" href="">CAIPORA</a>
+            <a class="text-white" href="">CAIPORA   <img src="img/favicon-32x32.png" alt="" srcset=""> </a>
         </div>
         <!-- Copyright -->
     </footer>
